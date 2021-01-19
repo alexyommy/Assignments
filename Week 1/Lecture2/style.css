@@ -1,0 +1,20 @@
+
+h1{
+    text-align: center;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: medium;
+    text-align: center;
+}
+
+.blue p{
+    color: blue;
+}
+
+#purple p{
+    color: purple;
+    display: inline-block;
+}

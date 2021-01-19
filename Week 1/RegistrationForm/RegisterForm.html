@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="register.php" method:post>
+        <p>Register Below!</p>
+        <!-- User's Name -->
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name">
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name">
+
+        <!-- User's email -->
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        
+        <!-- User's password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <label for="password_confirm">PW Confirm</label>
+        <input type="password" id="password_confirm" name="password_confirm">
+
+        <!-- User's birthday -->
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <!-- User's gender -->
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="decline">Prefer Not to Say</label>
+        <input type="radio" id="decline" name="gender" value="decline">
+
+        <!-- User's favorite Ice cream -->
+        <p>Favorite ice cream?</p>
+        <select name="ice_cream" id="ice_cream">
+            <option value="Vanilla">Vanilla</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Strawberry">Strawberry</option>
+        </select>
+
+        <!-- User's descripiton -->
+        <p>Describe Yourself</p>
+        <textarea name="descripiton" id="description" cols="30" rows="10"></textarea>
+
+        <!-- SUBMIT -->
+        <input type="submit" value="Register">
+
+    </form>
+</body>
+</html>

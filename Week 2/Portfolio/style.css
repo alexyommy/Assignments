@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px dotted blue; */
+}
+
+#container {
+    min-width: 1150px;
+    background-color: #f6f6f6;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    display: inline-block;
+    padding: 30px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-left: 450px;
+    padding: 10px;
+}
+
+.background {
+    background-image: linear-gradient(0deg, #6f5964, #47343b);
+    width: 1150px;
+}
+
+.main-body {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: wrap;
+}
+
+.main-body img {
+    width: 400px;
+    border: solid 5px #c0c0c0;
+    margin: 20px;
+}
+
+.bio {
+    background-image: linear-gradient(90deg, #fffeff, #dacbd9);
+    height: 273.16px;
+    margin: 20px;
+    width: 650px;
+}
+
+h3 {
+    padding: 15px;
+    background-image: linear-gradient(to bottom, #b3b2b6, #888694, #b3b2b6);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+p{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bio a{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolio {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.projects {
+    width: 340px;
+    margin: 20px;
+    background-image: linear-gradient(90deg, #fffeff, #dacbd9);
+}
+
+.projects img {
+    width: 340px;
+}
+
+.projects p {
+    height: 150px;
+}
+
+h4 {
+    padding: 15px;
+    background-image: linear-gradient(to bottom, #b3b2b6, #888694, #b3b2b6);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.tech_images li {
+    width: 30px;
+    display: inline-block;
+    padding: 15px;
+}
+
+.tech_images img {
+    width: 50px;
+    border-style: none;
+    margin: 10px;
+
+}
+
+.projects button {
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 5px;
+    margin-left: 40%;
+    margin-bottom: 25px;
+
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.footer{
+    background-color: #f6f6f6;
+    font-size: medium;
+    /* margin: 10px; */
+    width: 1150px;
+
+}
+
+.footer p{
+    display: flex;
+    justify-content: center;
+}
+
+.footer img{
+    height: 20px;
+    padding: 5px;
+}
+
+.footer ul{
+    align-items: center;
+}

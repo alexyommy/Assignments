@@ -1,4 +1,10 @@
-#webbackground{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.webbackground{
     background-color: #1b345d;
     width: 970px;
     padding: 10px;
@@ -44,6 +50,10 @@ ul{
     margin: 0;
 }
 
+ul p{
+    display: inline;
+}
+
 #bio{
     width: 720px;
     background-color: #0e1822;
@@ -53,7 +63,7 @@ ul{
     border-radius: 20px;
 }
 
-.ad{
+.footer{
     margin-top: 10px;
     width: 95%;
     background-color: #5d6673;
@@ -64,6 +74,6 @@ ul{
     align-items: center;
 }
 
-.ad p{
+.footer p{
     padding: 15px 0 15xp 15px
 }

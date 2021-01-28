@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    background-color: #d5d2ae;
+    width: 100%;
+    height: fit-content;
+}
+
+.header img {
+    height: 70px;
+} 
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.pics {
+    display: flex;
+    margin-left: 15px;
+}
+
+.bluecats {
+    list-style: none;
+    height: 100%;
+    flex-direction: column;
+}
+
+.bluecats img{
+    width: 80%;
+    padding: 11px;
+    background-color: #82b4ee;
+    border: 3px solid black;
+}
+
+.redcats {
+    list-style: none;
+    height: 100%;
+    flex-direction: column;
+}
+
+.redcats img{
+    width: 80%;
+    background-color: #f36870;
+    padding: 11.5px;
+    border: 3px solid black;
+}
+
+
+

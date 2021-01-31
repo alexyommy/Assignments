@@ -145,14 +145,11 @@ function swapVal(numArr){
 
 // 13.  Number to String
 function numToStr(numArr){
-    for(var i = 0; i < numArr.length; i++){
+    for (var i = 0; i < numArr.length; i++){
         if(numArr[i]<0){
             numArr[i]="Dojo";
         }
-        else{
-            numArr[i]=numArr[i];
-        }
-        return numArr;
     }
+    return numArr;
 }
-console.log(numToStr([-1,-3,2]));
+// console.log(numToStr([-1,-3,2]));

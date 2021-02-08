@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // this is how a getter function works
+            // $('button').click(function(){
+            // var myText = $('#test').text();
+            // alert(myText);
+            // })
+
+            // this is how a setter function works
+            $('button').click(function(){
+                $('#test').text('see how I .text() works as a setter!');
+            })
+            // this means wait for the document page to be ready
+            // $('h1').click(function(){
+            //     $('body').append('<h1>Hello Zombie</h1>');
+            // })
+            $('body').on('click', 'h1', function(){
+                // $('body').append('<h1>Hello Zombie</h1>');
+                $(this).slideUp(1500, function(){console.log("DONE!")});
+            })
+
+        });
+    </script>
+    
+    <title>jQuery</title>
+
+</head>
+<body>
+    <p id="test">Hehehe</p>
+    <h1>Hello World</h1>
+    <h1>Hello Dojo</h1>
+    <h1>Hello Mojo</h1>
+    <button>Click me!</button>
+    <div class="special">
+
+    </div>
+</body>
+</html>

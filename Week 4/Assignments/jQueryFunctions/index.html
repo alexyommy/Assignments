@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Function</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .selected {
+            color: red;
+        }
+        .highlight {
+            background: yellow;
+        }
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.click').click(function(){
+                alert("you clicked me!")
+            })
+            $('.hide').click(function(){
+                $(".hide").hide()
+            })
+            $('.show').click(function(){
+                $(".hide").show()
+            })
+            $('.toggle').click(function(){
+                $(".show").toggle()
+            })
+            $('.slideDown').click(function(){
+                $(".hidden").slideDown()
+            })
+            $('.slideUp').click(function(){
+                $(".hideUp").slideUp()
+            })
+            $('.slideToggle').click(function(){
+                $(".slide").slideToggle()
+            })
+            $('.fadeIn').click(function(){
+                $(".in").fadeIn(2000)
+            })
+            $('.fadeOut').click(function(){
+                $(".out").fadeOut("slow")
+            })
+            $('.addClass').click(function(){
+                $(".class").addClass("selected highlight")
+            })
+            $('.before').click(function(){
+                $(".before").before($(".one"))
+            })
+            $('.after').click(function(){
+                $(".after").after($(".two"))
+            })
+            $('.append').click(function(){
+                $(".appendp").append("Hello World!")
+            })
+            $('.html').click(function(){
+                $(".htmlcontainer").html("<p>Hello World. <em>We are HTML elements.</em></p>")
+            })
+        })
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Click</legend>
+        <p>Adds a function that occurs when an element is clicked. Click for an alert.</p>
+        <button class="click">Click</button>
+    </fieldset>
+    <fieldset>
+        <legend>Hide</legend>
+        <p>Hides the matched elements.</p>
+        <button class="hide">Click to hide this button</button>
+    </fieldset>
+    <fieldset>
+        <legend>Show</legend>
+        <p>Displays an element.</p>
+        <button class="show">Click to show previous button</button>
+    </fieldset>
+    <fieldset>
+        <legend>Toggle</legend>
+        <p>Displays or hides the matched elements.</p>
+        <button class="toggle">Click to toggle above button</button>
+    </fieldset>
+    <fieldset>
+        <legend>Slide Down</legend>
+        <p>Displays the matched elements with a sliding motion.</p>
+        <p class="hidden" hidden>I was hiding!</p>
+        <button class="slideDown">Click to slide down</button>
+    </fieldset>
+    <fieldset>
+        <legend>Slide Up</legend>
+        <p>Hide the matched elements with a sliding motion.</p>
+        <p class="hideUp">Byeeeeeeeee</p>
+        <button class="slideUp">Click to slide up</button>
+    </fieldset>
+    <fieldset>
+        <legend>Slide Toggle</legend>
+        <p class="slide">Displays or hides the matched elements with a sliding motion.</p>
+        <button class="slideToggle">Click to toggle slide</button>
+    </fieldset>
+    <fieldset>
+        <legend>Fade In</legend>
+        <p class="in" hidden>Displays the matched elements by fading them to opaque.</p>
+        <button class="fadeIn">Click to fade in</button>
+    </fieldset>
+    <fieldset>
+        <legend>Fade out</legend>
+        <p class="out">Hides the matched elements by fading them to transparent.</p>
+        <button class="fadeOut">Click to fade out</button>
+    </fieldset>
+    <fieldset>
+        <legend>Add Class</legend>
+        <p class="class">Adds the specified class(es) to each element in the set of matched elements.</p>
+        <button class="addClass">Click to add highlight and selected class</button>
+    </fieldset>
+    <fieldset>
+        <legend>Before</legend>
+        <p class="one">Inserts content, specified by the parameter, before each element in the set of matched elements.</p>
+        <p>I want to move up</p>
+        <button class="before">Click to move button before the first line</button>
+    </fieldset>
+    <fieldset>
+        <legend>After</legend>
+        <p>I want to move Down</p>
+        <p class="two">Inserts content, specified by the parameter, after each element in the set of matched elements.</p>
+        <button class="after">Click to move button after the first line</button>
+    </fieldset>
+    <fieldset>
+        <legend>Append</legend>
+        <p class="appendp">Inserts content, specified by the parameter, to the end of each element in the set of matched elements.</p>
+        <button class="append">Click to append a sentence</button>
+    </fieldset>
+    <fieldset>
+        <legend>HTML</legend>
+        <div class="htmlcontainer">
+        <p>Gets the HTML contents of the first elemenet in the set of matched elements</p>
+        </div>
+        <button class="html">Click to change the above content</button>
+    </fieldset>
+    <fieldset>
+        <legend>Attr</legend>
+        <p>Gets the value of an attribute for the first element in the set of matched elements</p>
+        <img src="Balt.png" alt="Baltimore Logo">
+        <button>Click to change photo attribute</button>
+    </fieldset>
+</body>
+</html>

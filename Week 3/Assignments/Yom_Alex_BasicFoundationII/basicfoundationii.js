@@ -104,6 +104,14 @@ function previousLengths(arr){
 // console.log(previousLengths(["hello","dojo","awesome"]));
 
 //  9. Add Seven
+
+// Create a function that takes in an array
+// Creates a new arr variable
+// iterates (for loop) through array
+// add 7 to each iteration
+// push new number to new arr
+// return new arr
+
 function addSeven(arr){
     var newArr = [];
     for(var i = 0; i < arr.length; i++){

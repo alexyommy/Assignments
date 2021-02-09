@@ -47,16 +47,38 @@
                 $(".class").addClass("selected highlight")
             })
             $('.before').click(function(){
-                $(".before").before($(".one"))
+                $(".beforep").before($("<p>Yooooo</p>"))
             })
             $('.after').click(function(){
-                $(".after").after($(".two"))
+                $(".afterp").after($("<p>Helloooo</p>"))
             })
             $('.append').click(function(){
-                $(".appendp").append("Hello World!")
+                $(".appendp").append("I have been appended!")
             })
             $('.html').click(function(){
                 $(".htmlcontainer").html("<p>Hello World. <em>We are HTML elements.</em></p>")
+            })
+            $('.attr').click(function() {
+                var classValue = $("#attr").attr("class")
+                $('#attr').append(classValue)
+            })
+            $('.attr2').click(function() {
+                $("#attr").attr("class", "blue")
+            })
+            $('.val').click(function() {
+                console.log($("#val").val())
+            })
+            $('.val2').click(function() {
+                $('#val').val("ninja")
+            })
+            $('.text').click(function() {
+                $('#text').text("dojo")
+            })
+            var str = $("#data")
+            $.data(str, "name", "charizard")
+            $('.data').click(function() {
+                var value = $.data(str, "name")
+                $("#data").after(value)
             })
         })
     </script>
@@ -74,12 +96,12 @@
     </fieldset>
     <fieldset>
         <legend>Show</legend>
-        <p>Displays an element.</p>
+        <p>Displays a hidden element.</p>
         <button class="show">Click to show previous button</button>
     </fieldset>
     <fieldset>
         <legend>Toggle</legend>
-        <p>Displays or hides the matched elements.</p>
+        <p>Toggles between show and hide.</p>
         <button class="toggle">Click to toggle above button</button>
     </fieldset>
     <fieldset>
@@ -116,33 +138,53 @@
     </fieldset>
     <fieldset>
         <legend>Before</legend>
-        <p class="one">Inserts content, specified by the parameter, before each element in the set of matched elements.</p>
-        <p>I want to move up</p>
-        <button class="before">Click to move button before the first line</button>
+        <p>Inserts content, specified by the parameter, before each element in the set of matched elements.</p>
+        <p class="beforep">There will be a p tag above me</p>
+        <button class="before">Click to add p tag before the second line</button>
     </fieldset>
     <fieldset>
         <legend>After</legend>
-        <p>I want to move Down</p>
-        <p class="two">Inserts content, specified by the parameter, after each element in the set of matched elements.</p>
-        <button class="after">Click to move button after the first line</button>
+        <p>Inserts content, specified by the parameter, after each element in the set of matched elements.</p>
+        <p class="afterp">The will be a p tag after me</p>
+        <button class="after">Click to move button after the second line</button>
     </fieldset>
     <fieldset>
         <legend>Append</legend>
         <p class="appendp">Inserts content, specified by the parameter, to the end of each element in the set of matched elements.</p>
-        <button class="append">Click to append a sentence</button>
+        <button class="append">Click to append element within p tag</button>
     </fieldset>
     <fieldset>
         <legend>HTML</legend>
         <div class="htmlcontainer">
-        <p>Gets the HTML contents of the first elemenet in the set of matched elements</p>
+        <p>Replaces the HTML within an element</p>
         </div>
         <button class="html">Click to change the above content</button>
     </fieldset>
     <fieldset>
         <legend>Attr</legend>
-        <p>Gets the value of an attribute for the first element in the set of matched elements</p>
-        <img src="Balt.png" alt="Baltimore Logo">
-        <button>Click to change photo attribute</button>
+        <p>Retrieves or sets an attribute of an element</p>
+        <p class="red" id="attr">I am a p tag with the class red. Class=</p>
+        <button class="attr">Click to retrieve the class</button>
+        <button class="attr2">Click to change the class attribute to blue</button>
+    </fieldset>
+    <fieldset>
+        <legend>Val</legend>
+        <p>Retrieves or sets a value of an input</p>
+        <input type="text" name="name" id="val">
+        <button class="val">Click to retrieve the value of an input. (In the console)</button>
+        <button class="val2">Click to change the value of the input to "ninja"</button>
+    </fieldset>
+    <fieldset>
+        <legend>Text</legend>
+        <p>Replaces the text of an element</p>
+        <p id="text">This text will get replaced.</p>
+        <button class="text">Click to replace the text with "dojo"</button>
+    </fieldset>
+    <fieldset>
+        <legend>Data</legend>
+        <p>Stores a data value in that element(hidden in javascript)</p>
+        <p id="data">I have a name hidden. Who's that pokemon?</p>
+        <button class="data">Click to retrieve the data</button>
     </fieldset>
 </body>
 </html>
